@@ -1,0 +1,124 @@
+.dashboard{
+    padding-top: 45px;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    .sign-left{
+        background-color: unset;
+        width: 22%;
+        display: block;
+        &::before{
+            display: none;
+        }
+        .user-pages{
+            li{
+                .active{
+                    background-color: #444;
+                }
+                .custom-btn{
+                    width: 100%;
+                    font-size: 14px;
+                    &:hover{
+                        color: #fff;
+                    }
+                }
+                
+            }
+        }
+        @media only screen and (max-width: 1024px){
+            width: 100%;
+            padding: 0 20px;
+            margin-bottom: 20px;
+            height: auto;
+            .user-pages{
+                margin-left: 0;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                li{
+                    width: 49%;
+                    @media only screen and (max-width: 768px){
+                        width: 100%;
+                        a,button{
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .sign-right{
+        width: 78%;
+        padding: 0 20px;
+        display: unset;
+        .main-form{
+            max-width: initial;
+        }
+        @media only screen and (max-width: 1024px){
+            width: 100%;
+            .main-form{
+                padding: 0;
+            }
+        }
+    }
+    .profile-details{
+        display: flex;
+        flex-direction: row;
+        align-items: unset;
+        justify-content: space-between;
+        margin-bottom: 12px;
+        .profile-pic{
+            width: 175px;
+            height: 175px;
+            border-radius: 50%;
+            img{
+                border-radius: 50%;
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+            @media only screen and (max-width: 768px){
+                width: 100px;
+                height: 100px;
+                margin-bottom: 20px;
+            }
+        }
+        .main-form{
+            width: calc(100% - 195px);
+            @media only screen and (max-width: 768px){
+                width: 100%;
+            }
+        }
+        @media only screen and (max-width: 768px){
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+    }
+    .d-flex{
+        width: 100%;
+    }
+    footer{
+        width: 100%;
+        text-align: center;
+        margin-top: 15px;
+    }
+    .documents{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .doc{
+            width: 24%;
+            padding: 20px;
+            border-radius: 6px;
+            box-shadow: 0 10px 40px rgba(14, 72, 119,0.2);
+            @media only screen and (max-width: 768px){
+                width: 49%;
+                margin-bottom: 20px;
+            }
+            @media only screen and (max-width: 480px){
+                width: 100%;
+            }
+        }    
+    }
+}

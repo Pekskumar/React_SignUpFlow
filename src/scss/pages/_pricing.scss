@@ -1,0 +1,25 @@
+.pricing-plan{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    
+    .item{
+        width: 24%;
+        border-radius: 6px;
+        box-shadow: 0 10px 40px rgba(14, 72, 119,0.2);
+        padding: 38px 22px;
+        text-transform: capitalize;
+        p{
+            margin-bottom: 0;
+        }
+        @media only screen and (max-width: 1024px){
+            width: 49%;
+            margin-bottom: 2%;
+        }
+        @media only screen and (max-width: 768px){
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    }
+}

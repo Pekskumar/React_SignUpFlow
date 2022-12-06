@@ -1,0 +1,194 @@
+@charset "utf-8";
+/* SCSS Documents */
+/* Table of Contents
+---------------------------------------------------
+    1. Fonts
+    2. Variables
+    3. Clean Base
+    4. Base Typography
+    5. Images
+    6. Links
+    7. Forms
+    8. Tables
+    
+
+*/
+/* 1. Fonts
+---------------------------------------------------*/
+// @import url('http://fonts.cdnfonts.com/css/bretanis');
+// @import url('http://fonts.cdnfonts.com/css/proxima-nova-2');
+// @import url('https://rsms.me/inter/inter.css');
+// @import url('http://fonts.cdnfonts.com/css/poppins');
+
+/* 2. Variables
+---------------------------------------------------*/
+$heading-font:'Inter', sans-serif;
+$body-font:'Poppins', sans-serif;
+// $body-font:'Proxima Nova', sans-serif;
+// $primary-color:#00203F;
+$body-color:#212529;
+$light-green-color:#ADEFD1;
+$dark-green-color:#09d3ac;
+$primary-color:#ffc6f1;
+$light-yellow-color:#ffe1bc;
+$light-pink-color:#ffcfd1;
+// $body-bg: linear-gradient(to left top, #00203f, #004362, #176981, #3b919c, #67b9b4, #73c9bb, #82d8c1, #93e8c6, #7ee3bf, #66deb8, #48d8b2, #09d3ac);
+// $body-bg:linear-gradient(106.37deg, #ffe1bc 29.63%,#ffcfd1 51.55%,#ffc6f1 90.85%);
+$body-bg:rgba(57,146,255,.5);
+$gray-color:#999;
+$border-radius:5px;
+$box-shadow: 0 0 8px 0px #00203f52;
+$white-color:#fff;
+$black-color:#000;
+
+$yellow-color:#ffbb00;
+$green-color:#7cbb00;
+$blue-color:#00a1f1;
+$red-color:#f65314;
+
+
+
+/* 3. Clean Base
+---------------------------------------------------*/
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, 
+legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, a, nav, section, summary, time, mark, audio, video 
+{margin:0;padding:0; border:0; outline:0; font-size:100%; vertical-align:baseline; background:transparent; text-decoration:none;outline:none; -webkit-font-smoothing: subpixel-antialiased; -webkit-tap-highlight-color:rgba(0,0,0,0);}
+html,body { -webkit-text-size-adjust:none; -webkit-font-smoothing: antialiased;}
+article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {display: block;}
+img{border:none;}
+select, input[type="text"], input[type="submit"], input[type="button"], input[type="password"], input[type="email"], input[type="tel"], input[type="search"], textarea {-webkit-appearance: none; outline: none;-webkit-appearance: none;-moz-appearance: none;appearance: none;} 
+textarea:focus, input:focus, a, div, img { outline: none;}
+textarea:focus, input:focus{border-color: $body-color;}
+.clear { clear: both;}
+
+/* 2. Base Typography
+---------------------------------------------------*/
+body{color:$body-color !important; font-size: 16px;font-family:$body-font !important; font-weight: 400;  }
+*{-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{ margin:0px 0px 20px;font-family: $heading-font !important; color: #444;}
+.h1,h1{ font-size:35px;}
+.h2,h2{ font-size:28px;}
+.h3,h3{ font-size:24px;}
+.h4,h4{ font-size:20px;}
+.h5,h5{ font-size:18px;}
+.h6,h6{ font-size:17px;}
+p{margin-bottom:20px;}
+ul{margin:0px 0px 0px 20px; padding:0;}
+ul li{ list-style: none;margin:0px 0px 10px;}
+ol{margin:0px 0px 0px 20px;;padding:0;}
+ol li{margin:0px 0px 10px;}
+blockquote{ display:block; text-align:left; margin-bottom:20px; position:relative; background:#f3f3f3; padding:20px 20px 10px 20px; border-left:2px solid #1589cb;}
+blockquote p{margin-bottom:15px; position:relative; }
+hr {border:0 #535353 solid; border-top-width:1px; clear:both; height:0;}
+
+/* 3. Images
+---------------------------------------------------*/
+img{border:none; border-style: none; max-width: 100%;vertical-align: middle;}
+
+/* 4. Link
+---------------------------------------------------*/
+a{color: #1abc9c; -webkit-transition: all 0.8s ease 0s;-o-transition: all 0.8s ease 0s;transition: all 0.8s ease 0s;display:inline-block;}
+a:hover{ text-decoration: none;color: #222;}
+// a:active, a.current {color:$skyblue-color;}
+a:focus {outline: none;}
+
+/* 5. Forms
+---------------------------------------------------*/
+textarea,input{
+  padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    display: block;
+    width: 100%;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.375rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, input[type="tel"]:focus, input[type="search"]:focus,textarea:focus{outline:none;}
+textarea{
+  min-height: 150px;
+  resize: none;
+  }
+input[type="submit"], input[type="button"], input[type="reset"]{ background:$white-color; cursor:pointer;  border:none; display:block; font-size:19px;border: 2px solid #f7c630;-webkit-border-radius:10px;-moz-border-radius:10px;-ms-border-radius:10px;-o-border-radius:10px;border-radius:10px;display: inline-block;padding:14px 15px;line-height: 22px;-webkit-transition: all 0.3s ease 0s;-o-transition: all 0.3s ease 0s;transition: all 0.3s ease 0s;font-weight: 500;}
+input[type="submit"]:hover, input[type="button"]:hover{ background:#f7c630; color:#000;}
+select{ border:2px solid rgba(82, 82, 82, .17); padding:14px 30px; color:#3D3D3D; font-size:16px; width: 100%;display: block; -webkit-border-radius:10px;-moz-border-radius:10px;-ms-border-radius:10px;-o-border-radius:10px;border-radius:10px;line-height: 22px;-webkit-transition: all 0.3s ease 0s;-o-transition: all 0.3s ease 0s;transition: all 0.3s ease 0s;font-weight: 300;background: $white-color;  background-repeat: no-repeat;background-position: 96% center;background-position: calc(100% - 10px) center;}
+table{border-spacing: 0; border-collapse: collapse;}
+td{text-align: left; font-weight: normal;}
+
+/* Standard style End */
+
+
+/*---------------------------------- Standard Clasess -----------------------------------*/
+.container{max-width: 1920px;padding-left: 30px;padding-right: 30px;margin: 0 auto;}
+.d-flex{display: flex;flex-wrap: wrap;}
+.justify-space-between{justify-content: space-between;}
+.justify-content-center{justify-content: center;}
+.align-item-center{align-items: center;}
+.text-center{text-align: center;}
+.text-right{text-align: right;}
+.flex-row-reverse{flex-direction: row-reverse;}
+.white-color{color: $white-color;}
+.red-color{color: $red-color;}
+.green-color{color: #1abc9c;}
+.custom-btn{
+    display: inline-block;
+    background-color: #1abc9c;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    border-radius: $border-radius;
+    color: $white-color;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 0;
+    cursor: pointer;
+    padding: 8px 26px;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: left;
+    &:hover{
+        background-color:#444;
+     
+    }
+    @media only screen and (max-width: 991px) {
+        padding: 8px 24px;
+        font-size: 15px;
+    }
+}
+::selection {
+  color: #fff;
+  background: #1abc9c;
+}
+// Scrollbar
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+    
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background:transparent; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: $white-color; 
+    border-radius: 20px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #1abc9c; 
+  }

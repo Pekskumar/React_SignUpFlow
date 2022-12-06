@@ -1,0 +1,92 @@
+.signup-page{
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    .sign-left{
+        width: 40%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        background-color: rgba(26,188,156,0.5);
+        &::before{
+            position: absolute;
+            content: '';
+            background-image: url('../../images/left-banner.jpg');
+            height: 100%;
+            width: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            z-index: -1;
+            left: 0;
+            top: 0;
+            
+        }
+        .left-content{
+            width: 100%;
+            max-width: 290px;
+            h1{
+                color: #fff;
+            }
+            p{
+                line-height: 1.5;
+            }
+        }
+    }
+    .sign-right{
+        width: 60%;
+        padding-top: 90px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        .main-form{
+            position: relative;
+            width: 100%;
+            max-width: 433px;
+            .form-group{
+                margin-bottom: 20px;
+                .error-msg{
+                    color: red;
+                    margin: 6px 0 0;
+                }
+                label{
+                    display: inline-block;
+                    font-size: 13px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    color: #555;
+                    margin-bottom: 10px;
+                    cursor: pointer;
+                }
+            }
+            .submit-btn{
+                text-align: center;
+            }
+        }
+    }
+    @media only screen and (max-width: 991px) {
+        .sign-left {
+            width: 100%;
+            height: 240px;
+        }
+        .sign-right{
+            width: 100%;
+            padding-top: 0;
+            .main-form{
+                padding: 50px 20px;
+            }
+        }
+    }
+}
+.back-error{
+    color: red;
+    text-align: center;
+}
+.back-success{
+    color: green;
+    text-align: center;
+}
