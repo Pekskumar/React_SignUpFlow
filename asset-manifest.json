@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/React_SignUpFlow/static/css/main.a2dae504.css",
+    "main.js": "/React_SignUpFlow/static/js/main.b827feaa.js",
+    "static/media/left-banner.jpg": "/React_SignUpFlow/static/media/left-banner.6e1077173cc994866845.jpg",
+    "static/media/logo.png": "/React_SignUpFlow/static/media/logo.a419c614864ecc3a4f84.png",
+    "index.html": "/React_SignUpFlow/index.html",
+    "main.a2dae504.css.map": "/React_SignUpFlow/static/css/main.a2dae504.css.map",
+    "main.b827feaa.js.map": "/React_SignUpFlow/static/js/main.b827feaa.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a2dae504.css",
+    "static/js/main.b827feaa.js"
+  ]
+}
